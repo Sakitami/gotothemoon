@@ -23,7 +23,8 @@ func main() {
     
     /* 同时声明多个变量*/
     var1,var2 := 1,2 
-    var vname1, vname2, vname3 = v1, v2, v3
+    /* 声明的变量必须被使用 */
+    var vname1, vname2, vname3 = 1, 2, 3
 
 
     fmt.Println("Hello,World!")
@@ -34,6 +35,8 @@ func main() {
     fmt.Printf("%v %q\n", f,s)
     // 输出结果：true 1 2
     fmt.Println(novar,var1,var2)
+    // 输出结果 ：1 2 3
+    fmt.Println(vname1,vname2,vname3)
 }
 
 
